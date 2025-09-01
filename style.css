@@ -2,29 +2,29 @@
     display: grid;
     grid-template-areas: 
     'header' 'header' 'header'
-    'heroimage' 'heroimage' 'heroinfo'
+    'hero_image' 'hero_image' 'hero_info'
     'body' 'body' 'body'
     'footer' 'footer' 'footer';
     background-color: #f6f4ef;
-}
-    
-.article__heroimage {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #f6f6f6;
-}
 
-.article__heroinfo {
+    .hero_image {
     border-style: solid;
     border-width: 1px;
     border-color: #f6f6f6;
+    }
+
+    .hero_info {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f6f6f6;
+    }
 }
 
 .header {
     display: grid;
     grid-template-areas: 
     'logo' 'menu' 'tid'
-    'logo' 'søg' 'tid';
+    'logo' 'led' 'tid';
     border-style: solid;
     border-width: 1px;
     border-color: #f6f6f6;
