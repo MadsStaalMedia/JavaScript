@@ -2,14 +2,20 @@
     display: grid;
     grid-template-areas: 
     'header' 'header' 'header'
-    'image' 'image' 'info'
+    'hero_image' 'hero_image' 'hero_info'
     'body' 'body' 'body'
     'footer' 'footer' 'footer';
-    
-
-
-
-
-
-
+    background-color: #f6f4ef;
 }
+    
+.hero_image {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f6f6f6;
+}
+
+.hero_info {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #f6f6f6;
+    }
