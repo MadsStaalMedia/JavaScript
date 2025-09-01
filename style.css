@@ -1,21 +1,31 @@
-.grid-container {
+.article {
     display: grid;
     grid-template-areas: 
     'header' 'header' 'header'
-    'hero_image' 'hero_image' 'hero_info'
+    'heroimage' 'heroimage' 'heroinfo'
     'body' 'body' 'body'
     'footer' 'footer' 'footer';
     background-color: #f6f4ef;
 }
     
-.hero_image {
+.article__heroimage {
     border-style: solid;
     border-width: 1px;
     border-color: #f6f6f6;
 }
 
-.hero_info {
-        border-style: solid;
-        border-width: 1px;
-        border-color: #f6f6f6;
-    }
+.article__heroinfo {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f6f6f6;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 
+    'logo' 'menu' 'tid'
+    'logo' 'søg' 'tid';
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f6f6f6;
+}
