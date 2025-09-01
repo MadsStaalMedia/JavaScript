@@ -7,6 +7,16 @@
     'footer' 'footer' 'footer';
     background-color: #f6f4ef;
 
+    .header {
+    display: grid;
+    grid-template-areas: 
+    'logo' 'menu' 'tid'
+    'logo' 'led' 'tid';
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f6f6f6;
+}
+
     .hero_image {
     border-style: solid;
     border-width: 1px;
@@ -18,14 +28,4 @@
     border-width: 1px;
     border-color: #f6f6f6;
     }
-}
-
-.header {
-    display: grid;
-    grid-template-areas: 
-    'logo' 'menu' 'tid'
-    'logo' 'led' 'tid';
-    border-style: solid;
-    border-width: 1px;
-    border-color: #f6f6f6;
 }
