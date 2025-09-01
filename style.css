@@ -56,7 +56,8 @@
 .header {
     grid-area: header;
     display: grid;
-    grid-template-areas: 3fr 9fr 1fr;
+    grid-template-areas: 
+    '3fr 9fr 1fr';
     border-style: solid;
     border-width: 1px;
     border-color: #f6f6f6;
