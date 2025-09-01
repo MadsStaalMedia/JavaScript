@@ -1,15 +1,17 @@
 
 .container {
+  grid-area: header;
   max-width: 700px;
   margin: 2rem auto;
   padding: 1rem;
 }
 
 .header {
-  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
 }
 
 .header h1 {
@@ -84,4 +86,7 @@
     'main main main'
     'footer footer footer';
     background-color: #f6f4ef;
+
+
 }
+
