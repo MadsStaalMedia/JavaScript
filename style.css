@@ -10,6 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
 }
 
 .header h1 {
@@ -84,4 +86,7 @@
     'main main main'
     'footer footer footer';
     background-color: #f6f4ef;
+
+
 }
+
