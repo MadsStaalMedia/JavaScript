@@ -6,6 +6,7 @@
 }
 
 .header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,16 +52,6 @@
   padding: 0.4rem 0.8rem;
   margin-bottom: 0.2rem;
   font-size: 0.95rem;
-}
-
-.header {
-    grid-area: header;
-    display: grid;
-    grid-template-areas: 
-    '3fr 9fr 1fr';
-    border-style: solid;
-    border-width: 1px;
-    border-color: #f6f6f6;
 }
 
 .hero_image {
