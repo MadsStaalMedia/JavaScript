@@ -1,5 +1,10 @@
 .grid-container {
     display: grid;
+    grid-template-areas: 
+    'header' 'header' 'header'
+    'image' 'image' 'info'
+    'body' 'body' 'body'
+    'footer' 'footer' 'footer';
     
 
 
@@ -7,5 +12,5 @@
 
 
 
-
 }
+
