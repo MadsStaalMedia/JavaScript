@@ -3,7 +3,7 @@ const msgs=[
     {t:"Åbningstider",x:"Man-fre:10-17, Lør:10-13"}
 ];
 
-const o=document.createElement("div");
+const o=document.createElement("div");  //hest
 const p=document.createElement("div");
 const b=document.createElement("button");
 
