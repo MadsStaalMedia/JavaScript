@@ -1,11 +1,54 @@
-.grid-container {
-    display: grid;
-    
 
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
 
+.week-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
+.week-nav span {
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
 
+.week-nav button {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
 
+.day {
+  margin-top: 1.5rem;
+}
+
+.day h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  background: #e0e0e0;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
 }
