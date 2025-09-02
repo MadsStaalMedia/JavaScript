@@ -98,10 +98,14 @@
 
 .infoknap {
   border: 1px solid #ccc;
-  height: auto;
-  min-height: 4rem;
+  height: 4rem;
   width: 25%;
-  background: #fff;
+  background: #f6f4ef;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.infoknap:hover {
+  background-color: #f4f2cf;
 }
