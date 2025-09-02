@@ -4,7 +4,7 @@ let tekst = document.getElementById("info");
 
 for (let i = 0; i < indhold.length; i++) {
     let x = indhold[i]
-    tekst.innerHTML += '<br><button class="infoknap" onclick="skabtekst('+i+')">' + x + '</button>';
+    tekst.innerHTML += '<button class="infoknap" onclick="skabtekst('+i+')">' + x + '</button>';
 };
 
 function skabtekst(x) {

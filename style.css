@@ -90,8 +90,21 @@
 
 }
 
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
 .infoknap {
   border: 1px solid #ccc;
+  height: auto;
+  min-height: 4rem;
+  width: 20rem;
   background: #fff;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
