@@ -1,9 +1,9 @@
-const indhold = ["img/baby1.jpg", "img/baby2.jpeg", "img/baby3.png"];
+const billeder = ["img/baby1.jpg", "img/baby2.jpeg", "img/baby3.png"];
 
 let galleri = document.getElementById("Galleri");
 
-for (let i = 0; i < indhold.length; i++) {
-    let x = indhold[i];
+for (let i = 0; i < billeder.length; i++) {
+    let x = billeder[i];
     galleri.innerHTML += '<img class="billedelille" src="'+x+'" onclick="skiftbillede('+i+')">';
 }
 
