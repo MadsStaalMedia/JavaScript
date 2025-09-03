@@ -109,3 +109,41 @@
   padding: 0.4rem 0.8rem;
   cursor: pointer;
 }
+.billedebox{                    /* Farvorit start*/
+  background-color: beige;
+   display:flex;
+   flex-direction: row; 
+   padding:10px
+   
+}
+
+.harry{
+  padding:10px 10px 0 10px;
+}
+
+.rolf{
+  padding:10px 10px 0 10px;
+}
+
+.strik{
+  padding:10px 10px 0 10px;
+}
+
+.forsvundet{
+   padding: 0 10px 10px 10px;
+
+}
+
+.havhesten{
+    padding: 0 10px 10px 10px;
+}
+
+.ben{
+  padding: 0 10px 10px 10px;
+}
+
+.bog__tekst{
+  display:flex;
+  margin: 20px;
+
+}                               /* Farvorit slut*/
