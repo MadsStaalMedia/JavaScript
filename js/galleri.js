@@ -19,3 +19,4 @@ if (Number(x)==2) {
     document.getElementById("billede").innerHTML='<img class="billedestor" src="img/baby3.png"> '
 }
 }
+document.getElementById("billede").innerHTML='<img class="billedestor" src="img/baby3.png"> '
