@@ -10,12 +10,12 @@ for (let i = 0; i < indhold.length; i++) {
 function skiftbillede(x) {
 let stortbillede = 0;
 if (Number(x)==0) {
-    document.getElementById("billede").innerHTML='<img class="billedestor" src="baby1.jpg"> '
+    document.getElementById("billede").innerHTML='<img class="billedestor" src="img/baby1.jpg"> '
 }
  if (Number(x)==1) {
-    document.getElementById("billede").innerHTML='<img class="billedestor" src="baby2.jpeg"> '
+    document.getElementById("billede").innerHTML='<img class="billedestor" src="img/baby2.jpeg"> '
 }
 if (Number(x)==2) {
-    document.getElementById("billede").innerHTML='<img class="billedestor" src="baby3.png"> '
+    document.getElementById("billede").innerHTML='<img class="billedestor" src="img/baby3.png"> '
 }
 }
