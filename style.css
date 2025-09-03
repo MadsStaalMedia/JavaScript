@@ -111,7 +111,8 @@
 }
 .billedebox{                    /* Farvorit start*/
   background-color: beige;
-   display:flex;
+   display: flex;
+   flex-wrap: wrap;
    flex-direction: row; 
    padding:10px
    
