@@ -1,4 +1,4 @@
-const indhold = ["baby1.jpg", "baby2.jpeg", "baby3.png"];
+const indhold = ["img/baby1.jpg", "img/baby2.jpeg", "img/baby3.png"];
 
 let galleri = document.getElementById("Galleri");
 
