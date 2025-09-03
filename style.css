@@ -104,6 +104,10 @@
   padding: 0.4rem 0.8rem;
   cursor: pointer;
   transition-duration: 0.5s;
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .infoknap:hover {

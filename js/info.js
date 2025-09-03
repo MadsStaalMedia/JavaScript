@@ -27,3 +27,5 @@ function skabtekst(x) {
 
     document.getElementById("afsnit").innerHTML = afsnit;
 };
+
+document.getElementById("afsnit").innerHTML = "<p>Du finder Årslev Bibliotek i Sdr. Nærå ved boldbanerne og overfor kirken. Du finder gode parkeringsmuligheder og nemme adgangsforhold for alle. <br><br>Biblioteket velindrettet og familievenligt. Her er et et aktuelt udvalg af skønlitteratur, faglitteratur, musik, film og spil. Årslev Bibliotek er et oplagt sted til fordybelse, leg og hygge.</p>"
