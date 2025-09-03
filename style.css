@@ -109,3 +109,40 @@
 .infoknap:hover {
   background-color: #f4f2cf;
 }
+
+#Galleri {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 0;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.billedelille {
+    border: 4px solid #F6AF43;
+    border-radius: 0;
+    height: auto;
+    width: 15%;
+
+    
+}
+
+.billedestor {
+    border: 4px solid #F6AF43;
+    border-radius: 0;
+    margin: auto;
+    height: auto;
+    width: 50%;
+
+}
+
+#billede {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+
+}
