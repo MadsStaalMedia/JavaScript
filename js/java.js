@@ -1,4 +1,4 @@
-
+// Inspiration fra W3 Schools og CHATgpt 
 const msgs=[ // opretter en konstant variabel // msgs er en liste af objekter 
     {t:"Årslev Bibliotek",x:"Velkommen! Se arrangementer."},  // { t: "...", x: "..." } (array liste)
  {t:"Åbningstider",x:"Man-fre:10-17, Lør:10-13"}
