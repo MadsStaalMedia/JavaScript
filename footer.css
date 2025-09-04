@@ -50,7 +50,10 @@
    }
    
    .footer-logo {
-    text-align: right;
+    justify-self: right;
+    margin-right: 20%;
     margin-top: 20px;
+    width: 150px;
+    height: auto;
    }
    
