@@ -6,49 +6,78 @@
   --secondary: #DBDBDB;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*border: 1px dashed red; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .header {
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr; /* logo | center | åbningstider */
+  grid-template-columns: 1fr 5fr 100px; /* logo | center | åbningstider */
   align-items: start;
   background: var(--background1);
+  outline: 1px solid var(--footer);
+  
   
 }
 
+.logo {
+  place-self: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 /* center bliver et grid med 3 kolonner */
 .center {
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr; /* menu | login | husk */
+  grid-template-columns: 10fr 1fr 1fr; /* menu | login | husk */
   grid-template-rows: auto auto;     /* top = menu+login+husk, bottom = søgefelt */
   align-items: center;
-  
+  outline: 1px solid var(--footer);
 }
 
 .menu {
   display: flex;
   gap: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  
+}
 
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .login, .husk {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--background1);
-  padding-block: 10px;
-  flex-direction: column; /* så billedet og knappen ligger under hinanden */
-  align-items: center;    /* centrerer horisontalt */
-  gap: 0.5rem;  
+  padding: 0.5rem;
+  outline: 1px solid var(--footer);
 }
+
+.login button, .husk button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
 .right {
     position: relative;   /* vigtigt til dropdown */
   display: flex;
   flex-direction: column; /* så billedet og knappen ligger under hinanden */
-  align-items: center;    /* centrerer horisontalt */
-  justify-content: space-between;
-  gap: 0.5rem;  
-    
+  align-items: center;    /* centrerer horisontalt */  
 }
+
 .ur {
     position: relative;
+    padding-top: 30px;
 }
 .search {
   grid-column: 1 / -1; /* fylder alle 3 kolonner */
@@ -58,26 +87,63 @@
 
 .search input {
   width: 100%;
-  padding: 0.6rem 1rem;
-  border: 1px solid var(--secondary);
-  border-radius: 4px;
+  padding: 1.5rem 1.5rem;
+  border: none;
+  border-top:  solid var(--footer);
+  background-color: var(--background1);
+  
+}
+
+.search input:hover {
+  background-color: var(--primary);
 }
 
 .open-time {
-    position: relative;
-    display: block;
-
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s; 
 }
+
+
+.open-time::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.open-time:hover::after {
+  width: 100%;           /* underline animation */
+}
+
+.open-time:hover {
+  color: black;
+}
+
+
 
 .schedule-box {
   display: none; /* starter skjult */
-  background: var(--background1);
-  border: 1px solid var(--secondary);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: absolute;
+  background-color: var(--background1);
+  overflow: auto;
   padding: 1rem;
-  margin-top: 0.5rem;
-  width: 500px;
-  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* sørger for den ligger ovenpå alt andet */
+  right: 0; /* positioneret mod højre */
+  text-align: center;
+  width: 20vw; /*betyder bredden på elementet er 20% af viewportens bredde.*/
+  
+  /* ny linje: afstand under knappen */
+  top: 110%; /* flytter den lidt ned under knappen */
  
 }
 
