@@ -13,7 +13,6 @@
 
         let output=document.getElementById("bogbox");
 
-    
 
         for(i=0; i < book.length; i++){
            let htmlBog = '<div class="bog"><img src="img/'+ book[i].billede +'" width="300px" height="400px" '+ book[i].titel + ' class="afstand"> <div class="bog__tekst"> <button onclick ="farvoritKnap('+ i +')">Farvorit</button> </div></div>'
