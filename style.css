@@ -215,17 +215,27 @@ a {
 
 }
 
-.billedebox{                    /* Farvorit start*/
-  background-color: beige;
+.billedebox1{                    /* Farvorit start*/
+  background-color: #f6f4ef;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row; 
-   padding:10px
-   
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#book{
+text-align: center;
+padding-top: 30px;
+
+background-color: #f6f4ef;
+margin-top: 50px;
 }
 
 .afstand{
-  padding:10px 10px 0 10px;
+  padding:20px;
 }
 
 
