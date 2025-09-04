@@ -1,62 +1,56 @@
-/*kopi fra CHATgpt*/
-
+/* CSS */
 .footer {
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
     color: #333;
-    font-family: 'Arial', sans-serif;
-    padding: 20px 0;
-  }
-  
-  .footer-content {
+   }
+   
+   .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-left, .footer-right {
+    margin: auto;
+   }
+   
+   .footer-column {
     flex: 1;
-  }
-  
-  .footer-left h3, .footer-right h3 {
-    font-size: 1.1rem;
+    min-width: 220px;
+    margin: 10px;
+   }
+   
+   .footer-column h3 {
+    font-size: 16px;
     margin-bottom: 10px;
-  }
-  
-  .footer-left p {
-    font-size: 0.9rem;
+    font-weight: bold;
+   }
+   
+   .footer-column p {
+    font-size: 14px;
     line-height: 1.5;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    transition: transform 0.2s;
-  }
-  
-  .social-icons a:hover {
-    transform: scale(1.1);
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    font-size: 0.8rem;
-    margin-top: 20px;
-  }
-  
-  .footer-bottom a {
-    color: #0073e6;
+   }
+   
+   .footer-column ul {
+    list-style: none;
+    padding: 0;
+   }
+   
+   .footer-column ul li {
+    margin-bottom: 5px;
+   }
+   
+   .footer-column a {
+    color: #333;
     text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
+   }
+   
+   .footer-column a:hover {
     text-decoration: underline;
-  }
-  
+   }
+   
+   .footer-logo {
+    text-align: right;
+    margin-top: 20px;
+   }
+   
