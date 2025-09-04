@@ -15,66 +15,45 @@
         <script src="js/info.js" defer></script>
         <script src="js/favorit.js" defer></script>
         <script src="js/galleri.js" defer></script>
+        <script src="scheduleEl.js" defer></script>
     </head>
 
     <body>
+ <header class="header">
+    <div class="logo">
+      <img src="img/aaslevbiblogo-kopi.svg" alt="">  
+    </div>
+    
+  <div class="center">
+    <nav class="menu">
+      <a href="#">Arrangementer</a>
+      <a href="#">Inspiration</a>
+      <a href="#">Digitalt</a>
+      <a href="#">Børn og unge</a>
+    </nav>
 
-        <div class="article">
-            
-            <div class="container">
-                <header class="header">
-                    <h1>Åbningstider</h1>
-                    <div class="week-nav">
-                        <button>&lt;</button>
-                        <span>UGE 36, 2025</span>
-                        <button>&gt;</button>
-                    </div>
-                </header>
-                <!-- åbningstider-->
-                <div class="day">
-                    <h2>Mandag: d. 01/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 13:00</span></div>
-                    <div class="time-row"><span>Med betjening</span><span>13:00 - 18:00</span></div>
-                    <div class="time-row"><span>Selvbetjening</span><span>18:00 - 22:00</span></div>
-                </div>
+    <div class="login">
+        <img src=img/person-kopi.svg alt="person"><br>
+      <button>Log ind</button>
+    </div>
 
-                <div class="day">
-                    <h2>Tirsdag: d. 02/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 11:00</span></div>
-                    <div class="time-row"><span>Med betjening</span><span>11:00 - 17:00</span></div>
-                    <div class="time-row"><span>Selvbetjening</span><span>17:00 - 22:00</span></div>
-                </div>
+    <div class="husk">
+        <img src="img/icon-heart-kopi.svg" alt=""><br>
+      <button>Husk</button>
+    </div>
 
-                <div class="day">
-                    <h2>Onsdag: d. 03/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 13:00</span></div>
-                    <div class="time-row"><span>Med betjening</span><span>13:00 - 17:00</span></div>
-                    <div class="time-row"><span>Selvbetjening</span><span>17:00 - 22:00</span></div>
-                </div>
+    <div class="search">
+      <input type="text" placeholder="Søg efter bøger, film, musik og mere...">
+    </div>
+  </div>
 
-                <div class="day">
-                    <h2>Torsdag: d. 04/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 13:00</span></div>
-                    <div class="time-row"><span>Med betjening</span><span>13:00 - 17:00</span></div>
-                    <div class="time-row"><span>Selvbetjening</span><span>17:00 - 22:00</span></div>
-                </div>
+  <div class="right">
+  <img src="img/ur-kopi.svg" alt="ur" class="ur"><br>
+  <button class="open-time">Åbningstider</button>
+  <div id="schedule" class="schedule-box"></div>
+</div>
+</header>
 
-                <div class="day">
-                    <h2>fredag: d. 05/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 13:00</span></div>
-                    <div class="time-row"><span>Med betjening</span><span>13:00 - 17:00</span></div>
-                    <div class="time-row"><span>Selvbetjening</span><span>17:00 - 22:00</span></div>
-                </div>
-
-                <div class="day">
-                    <h2>Lørdag: d. 06/09</h2>
-                    <div class="time-row"><span>Selvbetjening</span><span>07:00 - 22:00</span></div>
-
-                    <div class="day">
-                        <h2>Søndag: d. 06/09</h2>
-                        <div class="time-row"><span>Selvbetjening</span><span>07:00 - 22:00</span></div>
-                    </div>
-                </div>
                     <!-- åbningstider slutter -->
             </div>
 
@@ -113,6 +92,7 @@
 
 
         </div>
+          
         
     </body>
 

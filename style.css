@@ -1,59 +1,161 @@
+:root {
+  --background1: #f7f6f2;
+  --footer: #EEE9E4;
+  --accent: #FCB040;
+  --primary: #FFFFFF;
+  --secondary: #DBDBDB;
+}
 
-.container {
-  grid-area: header;
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*border: 1px dashed red; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  display: grid;
+  grid-template-columns: 1fr 5fr 100px; /* logo | center | åbningstider */
+  align-items: start;
+  background: var(--background1);
+  outline: 1px solid var(--footer);
+  
   
 }
 
-.header h1 {
-  font-size: 1.8rem;
-  margin: 0;
+.logo {
+  place-self: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-
-.week-nav {
-  display: flex;
+/* center bliver et grid med 3 kolonner */
+.center {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr; /* menu | login | husk */
+  grid-template-rows: auto auto;     /* top = menu+login+husk, bottom = søgefelt */
   align-items: center;
-  gap: 0.5rem;
+  outline: 1px solid var(--footer);
 }
 
-.week-nav span {
-  border: 1px solid #ccc;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
+.menu {
+  display: flex;
+  gap: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  
 }
 
-.week-nav button {
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: 0.4rem 0.8rem;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.login, .husk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background1);
+  padding: 0.5rem;
+  outline: 1px solid var(--footer);
+}
+
+.login button, .husk button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.right {
+    position: relative;   /* vigtigt til dropdown */
+  display: flex;
+  flex-direction: column; /* så billedet og knappen ligger under hinanden */
+  align-items: center;    /* centrerer horisontalt */  
+}
+
+.ur {
+    position: relative;
+    padding-top: 30px;
+}
+.search {
+  grid-column: 1 / -1; /* fylder alle 3 kolonner */
+  display: flex;
+  
+}
+
+.search input {
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  border: none;
+  border-top:  solid var(--footer);
+  background-color: var(--background1);
+  
+}
+
+.search input:hover {
+  background-color: var(--primary);
+}
+
+.open-time {
+  background: none;
+  border: none;
   cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s; 
 }
 
-.day {
-  margin-top: 1.5rem;
+
+.open-time::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.day h2 {
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem;
+.open-time:hover::after {
+  width: 100%;           /* underline animation */
 }
 
-.time-row {
+.open-time:hover {
+  color: black;
+}
+
+
+
+.schedule-box {
+  display: none; /* starter skjult */
+  position: absolute;
+  background-color: var(--background1);
+  overflow: auto;
+  padding: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* sørger for den ligger ovenpå alt andet */
+  right: 0; /* positioneret mod højre */
+  text-align: center;
+  width: 20vw; /*betyder bredden på elementet er 20% af viewportens bredde.*/
+  
+  /* ny linje: afstand under knappen */
+  top: 110%; /* flytter den lidt ned under knappen */
+ 
+}
+
+.schedule-box .time-row {
   display: flex;
   justify-content: space-between;
-  background: #e0e0e0;
-  padding: 0.4rem 0.8rem;
-  margin-bottom: 0.2rem;
-  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem 0;
+}
+
+.schedule-box .time-row:last-child {
+  border-bottom: none;
 }
 
 .main {
@@ -167,4 +269,3 @@
     margin: auto;
     width: 100%;
 
-}
