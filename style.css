@@ -94,35 +94,38 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin: auto;
 }
 
 .infoknap {
   border: 1px solid #ccc;
-  height: 4rem;
-  width: 25%;
-  background: #f6f4ef;
+  height: auto;
+  min-height: 4rem;
+  width: 20rem;
+  background: #fff;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
-  transition-duration: 0.5s;
-  font-family: "Lora", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
+}
+.billedebox{                    /* Farvorit start*/
+  background-color: beige;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row; 
+   padding:10px
+   
 }
 
-.infoknap:hover {
-  background-color: #f4f2cf;
+.afstand{
+  padding:10px 10px 0 10px;
 }
 
-#afsnit {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 1rem;
-  font-family: "Noto Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #484848;
 
-}
+
+.bog__tekst{
+  display:flex;
+  margin: 20px;
+
+}                               /* Farvorit slut*/
