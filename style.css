@@ -126,3 +126,24 @@
   color: #484848;
 
 }
+
+.billedebox{                    /* Farvorit start*/
+  background-color: beige;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row; 
+   padding:10px
+   
+}
+
+.afstand{
+  padding:10px 10px 0 10px;
+}
+
+
+
+.bog__tekst{
+  display:flex;
+  margin: 20px;
+
+}                               /* Farvorit slut*/
